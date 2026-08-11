@@ -789,16 +789,16 @@ a { color: inherit; text-decoration: none; transition: color var(--t); }
 .doctor-title { color: rgba(237,234,224,0.7); font-size: 0.88rem; letter-spacing: 0.4px; margin-bottom: 28px; }
 
 .whatsapp-contact { margin-top: 10px; }
-
-.whatsapp-link {
+.whatsapp-contact .whatsapp-link {
   display: inline-flex; align-items: center; gap: 12px;
   background: #25D366; color: white;
   padding: 16px 36px; border-radius: var(--radius-pill);
   font-size: 1rem; font-weight: 600;
   box-shadow: 0 4px 18px rgba(37,211,102,0.35);
   transition: all var(--t); letter-spacing: 0.3px;
+  width: auto;
 }
-.whatsapp-link:hover { background: #1EB954; transform: translateY(-3px); box-shadow: 0 8px 30px rgba(37,211,102,0.4); }
+.whatsapp-contact .whatsapp-link:hover { background: #1EB954; transform: translateY(-3px); box-shadow: 0 8px 30px rgba(37,211,102,0.4); }
 
 /* ═══════════════════════════
    FAQ
@@ -918,7 +918,7 @@ a { color: inherit; text-decoration: none; transition: color var(--t); }
 }
 
 .contact-whatsapp { margin-top: 8px; }
-.whatsapp-link {
+.contact-whatsapp .whatsapp-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -933,8 +933,8 @@ a { color: inherit; text-decoration: none; transition: color var(--t); }
   box-shadow: 0 8px 22px rgba(37,211,102,0.3);
   transition: all var(--t);
 }
-.whatsapp-link i { font-size: 1.2rem; }
-.whatsapp-link:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(37,211,102,0.4); }
+.contact-whatsapp .whatsapp-link i { font-size: 1.2rem; }
+.contact-whatsapp .whatsapp-link:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(37,211,102,0.4); }
 
 .contact-note {
   margin-top: 18px;
@@ -1585,7 +1585,7 @@ a { color: inherit; text-decoration: none; transition: color var(--t); }
   .contact-details-side { padding: 28px 20px; }
   .contact-item a { padding: 14px 16px; font-size: 0.92rem; }
 
-  .whatsapp-link { padding: 14px 28px; font-size: 0.9rem; }
+  .whatsapp-contact .whatsapp-link { padding: 14px 28px; font-size: 0.9rem; }
 
   .hours-container { gap: 8px 12px; padding: 18px; }
   .hours-day, .hours-time { font-size: 0.85rem; }

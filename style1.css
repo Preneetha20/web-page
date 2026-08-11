@@ -34,7 +34,7 @@
 }
 
 .contact-image-side img:hover {
-  transform: scale(1.03) rotate(-1deg);
+  transform: scale(1.03);
 }
 
 .contact-details-side {
@@ -92,7 +92,7 @@
   background: var(--sage);
   border-color: var(--sage);
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(126,34,206,0.25);
+  box-shadow: 0 8px 25px rgba(110,46,27,0.25);
 }
 
 .contact-item:hover a,

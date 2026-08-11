@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
     <link rel="shortcut icon" type="x-icon" href="logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Classical Homeocare — Natural Healing, Lasting Wellness</title>
     <link rel="stylesheet" href="style.css">
@@ -18,73 +19,63 @@
 <header class="header" id="header">
     <div class="logo-container">
         <img src="logo.png" alt="Classical Homeocare Logo" class="logo-img">
-        <a href="index.html" class="logo-text">CLASSICAL HOMEOCARE</a>
+        <a href="./" class="logo-text">CLASSICAL HOMEOCARE</a>
     </div>
     <nav class="navbar" id="navbar">
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
         </ul>
     </nav>
+    <div class="header-actions">
+        <a href="tel:+919842787578" class="nav-phone"><i class="fas fa-phone"></i> +91 98427 87578</a>
+        <a href="https://wa.me/919842787578" target="_blank" class="nav-cta">Book Now</a>
+    </div>
     <button id="menu-btn" class="menu-btn" aria-label="Toggle menu">☰</button>
 </header>
 
 <!-- ═══ HERO ═══ -->
 <section class="hero" id="home">
     <img class="background-container" src="Home.png" alt="Classical Homeocare Clinic">
-    <div class="hero-overlay"></div>
-    <div class="hero-rings" aria-hidden="true">
-        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="200" cy="200" r="60" stroke-width="1"></circle>
-            <circle cx="200" cy="200" r="110" stroke-width="1"></circle>
-            <circle cx="200" cy="200" r="160" stroke-width="1"></circle>
-            <circle cx="200" cy="200" r="198" stroke-width="1"></circle>
-        </svg>
-    </div>
+    <div class="hero-overlay"></div><br><br><br><br>
+<br>
     <div class="context hero-content">
-        <p class="hero-eyebrow">Classical &amp; Constitutional Homeopathy</p>
-        <h1>Transform Your Health with the Power of Homeopathy</h1>
-        <p>Experience holistic healing with 23+ years of trusted homeopathic care in Salem, Tamil Nadu</p>
+        <p class="hero-eyebrow">A Classical Homeopathy Clinic</p>
+        <h1>Heal naturally,<br><em>restore your balance.</em></h1>
         <div class="hero-actions">
             <a href="https://wa.me/919842787578" class="btn">
-                <i class="fa-brands fa-whatsapp"></i> Book Appointment
+                Book a Consultation
             </a>
-            <a href="about.html" class="btn-ghost">
+            <a href="/about" class="btn-ghost">
                 Meet Dr. Ahilan
             </a>
         </div>
     </div>
-    <div class="scroll-cue">
-        <span class="scroll-cue-line"></span>
-        Scroll
+    <div class="hero-stats-bar">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number" data-target="23" data-suffix="+">0</div>
+                <div class="stat-label">Years of Practice</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="5000" data-suffix="+">0</div>
+                <div class="stat-label">Patients Cared For</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="9" data-suffix="+">0</div>
+                <div class="stat-label">Specialities</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="100" data-suffix="%">0</div>
+                <div class="stat-label">Natural Remedies</div>
+            </div>
+        </div>
     </div>
 </section>
 
 <div class="content">
-
-<!-- ═══ STATS ═══ -->
-<section class="stats-section">
-    <div class="stats-grid">
-        <div class="stat-item">
-            <div class="stat-number" data-target="23" data-suffix="+">0</div>
-            <div class="stat-label">Years of Practice</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number" data-target="5000" data-suffix="+">0</div>
-            <div class="stat-label">Patients Cared For</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number" data-target="9" data-suffix="+">0</div>
-            <div class="stat-label">Specialities Treated</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number" data-target="100" data-suffix="%">0</div>
-            <div class="stat-label">Natural Remedies</div>
-        </div>
-    </div>
-</section>
 
 <!-- ═══ INTRO ═══ -->
 <section class="intro-section animate-on-scroll">
@@ -95,27 +86,37 @@
     </div>
 </section>
 
-<!-- ═══ SLIDESHOW ═══ -->
-<section class="slideshow-section animate-on-scroll">
-    <div class="slideshow-container">
-        <div class="mySlides fade"><img src="img1.png" alt="Treatment 1"></div>
-        <div class="mySlides fade"><img src="img2.png" alt="Treatment 2"></div>
-        <div class="mySlides fade"><img src="img3.png" alt="Treatment 3"></div>
-        <div class="mySlides fade"><img src="img4.png" alt="Treatment 4"></div>
-        <div class="mySlides fade"><img src="img5.png" alt="Treatment 5"></div>
-        <div class="mySlides fade"><img src="img6.png" alt="Treatment 6"></div>
-        <div class="mySlides fade"><img src="img7.png" alt="Treatment 7"></div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<!-- ═══ WHY CHOOSE US ═══ -->
+<section class="why-section animate-on-scroll">
+    <div class="section-title animate-on-scroll">
+        <h2>Why Patients Choose Us</h2>
+        <div class="subtitle">
+            <span class="dots left-dots"></span>
+            <span class="subtitle-text">Care built on trust</span>
+            <span class="dots right-dots"></span>
+        </div>
     </div>
-    <div class="dots-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-        <span class="dot" onclick="currentSlide(7)"></span>
+    <div class="why-grid">
+        <div class="why-card animate-on-scroll">
+            <div class="why-icon"><i class="fas fa-user-doctor"></i></div>
+            <h3>Certified Expertise</h3>
+            <p>Dr. D. Ahilan, BHMS, M.D. (Hom), brings 25+ years of classical homeopathic training to every case.</p>
+        </div>
+        <div class="why-card animate-on-scroll">
+            <div class="why-icon"><i class="fas fa-leaf"></i></div>
+            <h3>Gentle, No Side Effects</h3>
+            <p>Remedies are prepared in minute, natural doses — safe for infants, pregnant women, and elderly patients.</p>
+        </div>
+        <div class="why-card animate-on-scroll">
+            <div class="why-icon"><i class="fas fa-notes-medical"></i></div>
+            <h3>Root-Cause Case-Taking</h3>
+            <p>Every visit begins with a detailed case history, treating the person, not just the symptom.</p>
+        </div>
+        <div class="why-card animate-on-scroll">
+            <div class="why-icon"><i class="fas fa-comment-medical"></i></div>
+            <h3>Easy WhatsApp Access</h3>
+            <p>Message us anytime to ask questions, share reports, or book your consultation — no waiting on hold.</p>
+        </div>
     </div>
 </section>
 
@@ -132,39 +133,39 @@
     <div class="additional-info">
         <div class="info-item animate-on-scroll">
             <img src="7.png" alt="Skin Treatment">
-            <p><b>Skin</b>Homoeopathy offers excellent treatment for all type of skin diseases like psoriasis, urticaria, vitiligo, eczema, lichen, skin allergies and atopic dermatitis can be treated effectively with Homoeopathic medicine without any side effects.</p>
+            <p><b>Skin</b> Effective treatment for skin conditions including psoriasis, urticaria, vitiligo, eczema, lichen, allergies, and atopic dermatitis — treated with homeopathic medicine and no side effects.</p>
         </div>
         <div class="info-item animate-on-scroll">
             <img src="5.png" alt="Fistula Treatment">
-            <p><b>Fistula</b>Homoeopathy cures the cases of repeated fistula track even after an surgery. A complete recovery from Fistula in Ano with our Rapid, Gentle, Herbal Medicine.</p>
+            <p><b>Fistula</b> Homeopathy treats recurring fistula tracks, including cases that persist after surgery, offering a gentle, non-invasive path to complete recovery.</p>
         </div>
         <div class="info-item animate-on-scroll">
             <img src="6.png" alt="Piles Treatment">
-            <p><b>Piles</b>Our Homeo Care provide a complete recovery in cases of piles, fissure and other ano-rectal complaints, without any surgery.</p>
+            <p><b>Piles</b> Complete recovery from piles, fissures, and other ano-rectal complaints — without surgery.</p>
         </div>
         <div class="info-item animate-on-scroll">
             <img src="8.png" alt="Respiratory Treatment">
-            <p><b>Respiratory</b>Homoeopathy offers excellent treatment for all type of respiratory illness like Asthma, Allergic Rhinitis, Pneumonia, Bronchitis, Acute and chronic tonsillitis and COPD can be treated effectively with our Homoeopathic medicine.</p>
+            <p><b>Respiratory</b> Effective treatment for respiratory conditions including asthma, allergic rhinitis, pneumonia, bronchitis, acute and chronic tonsillitis, and COPD.</p>
         </div>
         <div class="info-item animate-on-scroll">
             <img src="1.png" alt="Gall Stones Treatment">
-            <p><b>Gall Stones</b>Homeopathy is the best way to dissolve the gall bladder stones. No pain, No need for surgery.</p>
+            <p><b>Gall Stones</b> A proven, non-surgical way to dissolve gallbladder stones — no pain, no procedure required.</p>
         </div>
         <div class="info-item animate-on-scroll">
             <img src="2.png" alt="Women Care">
-            <p><b>Women Care</b>Our Women Care services provide a comprehensive care and treatment, from Routine check-ups to complex medical issues like Fibroid Uterus, Endometriosis, PCOS, Irregular Periods etc.,</p>
+            <p><b>Women Care</b> Comprehensive care from routine check-ups to complex conditions such as fibroid uterus, endometriosis, PCOS, and irregular periods.</p>
         </div>
         <div class="info-item animate-on-scroll">
             <img src="3.png" alt="Thyroid Treatment">
-            <p><b>Thyroid</b>Homeopathy treats thyroid problems, rather uses natural herbal medicines to regulate the secretion of the thyroid gland.</p>
+            <p><b>Thyroid</b> Natural regulation of thyroid gland function through targeted homeopathic remedies, without hormone replacement.</p>
         </div>
         <div class="info-item animate-on-scroll">
             <img src="4.png" alt="Kidney Stone Treatment">
-            <p><b>Kidney Stone</b>At Classical Homeo Care we Provide a Complete healing to repeated Renal stones, Renal cyst, High Creatinine and other Chronic Renal Diseases with our German Homeopathic Remedies.</p>
+            <p><b>Kidney Stone</b> Complete care for recurring renal stones, renal cysts, high creatinine, and other chronic renal conditions, using German homeopathic remedies.</p>
         </div>
         <div class="info-item animate-on-scroll">
             <img src="9.png" alt="Digestive System Treatment">
-            <p><b>Digestive System</b>Homoeopathy offers excellent treatment for Gastric illness like Heartburn, Dyspepsia or Indigestion, Bloating, IBS, Lactose Intolerance, constipation, Gastroesophageal Reflux Disease (GERD), Peptic Ulcer Disease, Crohn's Disease, Ulcerative Colitis</p>
+            <p><b>Digestive System</b> Relief for gastric conditions including heartburn, indigestion, bloating, IBS, lactose intolerance, constipation, GERD, peptic ulcer disease, Crohn's disease, and ulcerative colitis.</p>
         </div>
     </div>
 </section>
@@ -187,7 +188,6 @@
                 <div class="testimonial-avatar">K</div>
                 <div>
                     <div class="testimonial-name">Kavitha R.</div>
-                    <div class="testimonial-role">Skin Treatment</div>
                     <div class="testimonial-stars">★★★★★</div>
                 </div>
             </div>
@@ -199,7 +199,6 @@
                 <div class="testimonial-avatar">M</div>
                 <div>
                     <div class="testimonial-name">Muthu S.</div>
-                    <div class="testimonial-role">Kidney Stone Care</div>
                     <div class="testimonial-stars">★★★★★</div>
                 </div>
             </div>
@@ -211,7 +210,6 @@
                 <div class="testimonial-avatar">P</div>
                 <div>
                     <div class="testimonial-name">Priya V.</div>
-                    <div class="testimonial-role">Respiratory Care</div>
                     <div class="testimonial-stars">★★★★★</div>
                 </div>
             </div>
@@ -223,8 +221,8 @@
 <section class="contact-section animate-on-scroll">
     <div class="contact-info">
         <img src="pic.png" alt="Dr. D. Ahilan" class="circle-img">
-        <p class="doctor-name">Dr. D. Ahilan, BHMS., M.D.(Hom).</p>
-        <p class="doctor-title">23+ Years of Classical Homeopathic Practice</p>
+        <p class="doctor-name">Dr. D. Ahilan, BHMS, M.D. (Hom)</p>
+        <p class="doctor-title">25+ Years of Classical Homeopathic Practice</p>
         <div class="whatsapp-contact">
             <a href="https://wa.me/919842787578" target="_blank" class="whatsapp-link">
                 <i class="fa-brands fa-whatsapp"></i> Message us on WhatsApp
@@ -286,7 +284,7 @@
 <!-- ═══ CLINIC INFO ═══ -->
 <section class="clinic-info-section">
     <div class="contact1-details">
-        <p class="clinic-name">Classical HomeoCare</p>
+        <p class="clinic-name">Classical Homeocare</p>
         <p class="clinic-address">175/1, main road, near Hotel Ashwa Park, Jaheer Reddy Pati, Salem, Tamilnadu 636302</p>
     </div>
     <div class="info">
@@ -323,21 +321,21 @@
 <section class="follow-us">
     <h2>Follow Us</h2>
     <div class="wrapper">
-        <a href="https://www.facebook.com/ahilan1977?mibextid=ZbWKwL" class="button" target="_blank">
+        <a href="https://www.facebook.com/ahilan1977?mibextid=ZbWKwL" class="button" target="_blank" aria-label="Follow us on Facebook">
             <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
         </a>
-        <a href="https://www.facebook.com/ahilan1977?mibextid=ZbWKwL" class="button" target="_blank">
-            <div class="icon"><i class="fa-brands fa-twitter"></i></div>
-        </a>
-        <a href="https://www.instagram.com/classicalhomeocare?igsh=Nm9qcGQ4Mmg5NWI=" class="button" target="_blank">
+        <a href="https://www.instagram.com/classicalhomeocare?igsh=Nm9qcGQ4Mmg5NWI=" class="button" target="_blank" aria-label="Follow us on Instagram">
             <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+        </a>
+        <a href="https://wa.me/919842787578" class="button" target="_blank" aria-label="Message us on WhatsApp">
+            <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
         </a>
     </div>
 </section>
 
 <!-- ═══ FOOTER ═══ -->
 <footer class="ft">
-    <p>Copyright © 2024 ClassicalHomeoCare — All Rights Reserved.</p>
+    <p>Copyright © 2026 Classical Homeocare — All Rights Reserved.</p>
 </footer>
 
 </div><!-- end .content -->

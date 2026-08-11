@@ -43,11 +43,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ===== Active Nav Link Highlighting =====
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const currentPath = window.location.pathname.replace(/\/index\.html?$/, '/').replace(/\.html$/, '');
+    const normalizedPath = currentPath === '' ? '/' : currentPath;
     document.querySelectorAll('.navbar ul li a').forEach(link => {
         const href = link.getAttribute('href');
-        if (href === currentPage) {
+        if (!href) return;
+        const normalizedHref = href === '/' ? '/' : href.replace(/\/$/, '');
+        const comparePath = normalizedPath === '/' ? '/' : normalizedPath.replace(/\/$/, '');
+        if (normalizedHref === comparePath) {
             link.classList.add('active');
+        } else {
+            link.classList.remove('active');
         }
     });
 

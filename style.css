@@ -913,9 +913,9 @@ a { color: inherit; text-decoration: none; transition: color var(--t); }
 .ft {
   background: var(--ink);
   color: rgba(237,234,224,0.55);
-  padding: 38px 5%;
+  padding: 18px 5%;
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   border-top: 1px solid rgba(255,255,255,0.06);
   letter-spacing: 0.3px;
 }
@@ -982,21 +982,14 @@ a { color: inherit; text-decoration: none; transition: color var(--t); }
    ═══════════════════════════ */
 .page-hero {
   background: linear-gradient(150deg, var(--sage-deep) 0%, #3A2A1E 55%, var(--evergreen-deep) 100%);
-  padding: 138px 5% 100px;
+  padding: 138px 5% 60px;
   text-align: center;
   color: var(--card);
   position: relative;
   overflow: hidden;
 }
 .page-hero::after {
-  content: '';
-  position: absolute;
-  bottom: -70px; left: 50%;
-  transform: translateX(-50%);
-  width: 200%; height: 100px;
-  background: var(--paper);
-  border-radius: 50% 50% 0 0;
-  z-index: 0;
+  display: none;
 }
 .page-hero h1 {
   font-family: var(--font-display);
@@ -1405,7 +1398,7 @@ a { color: inherit; text-decoration: none; transition: color var(--t); }
   .about-block-media img { height: 260px; }
   .values-grid { grid-template-columns: 1fr; gap: 18px; }
 
-  .page-hero { padding: 112px 5% 90px; }
+  .page-hero { padding: 112px 5% 48px; }
   .hours-container { padding: 20px 22px; }
 
   .floating-actions { right: 16px; bottom: 16px; }
@@ -1450,7 +1443,7 @@ a { color: inherit; text-decoration: none; transition: color var(--t); }
   .about-block-media img { height: 200px; }
   .value-card { padding: 28px 20px; }
 
-  .page-hero { padding: 96px 5% 84px; }
+  .page-hero { padding: 96px 5% 40px; }
   .page-hero h1 { font-size: 1.6rem; }
 
   .whatsapp-link { padding: 14px 28px; font-size: 0.9rem; }

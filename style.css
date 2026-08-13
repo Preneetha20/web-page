@@ -211,17 +211,17 @@ a { color: inherit; text-decoration: none; transition: color var(--t); }
   width: 44px;
   height: 44px;
   font-size: 1.3rem;
-  background: var(--sage-pale);
-  border: 1px solid var(--line);
+  background: var(--sage);
+  border: 1px solid var(--sage);
   border-radius: var(--radius-sm);
-  color: var(--sage-deep);
+  color: var(--card);
   cursor: pointer;
   transition: all var(--t);
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
-.menu-btn:hover, #menu-btn:hover { background: var(--sage); color: var(--card); }
+.menu-btn:hover, #menu-btn:hover { background: var(--sage-deep); border-color: var(--sage-deep); }
 
 .header-actions {
   display: flex;
@@ -247,8 +247,11 @@ a { color: inherit; text-decoration: none; transition: color var(--t); }
 .nav-cta {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  padding: 10px 24px;
+  height: 44px;
+  padding: 0 24px;
+  line-height: 1;
   background: var(--sage);
   color: var(--card);
   font-size: 0.82rem;
@@ -1452,6 +1455,9 @@ a { color: inherit; text-decoration: none; transition: color var(--t); }
 @media (max-width: 768px) {
   .menu-btn, #menu-btn { display: flex; }
 
+  .section-title { margin-bottom: 44px; }
+  .section-title h2::before { width: 100px; height: 100px; }
+
   .navbar {
     position: absolute;
     top: 100%;
@@ -1472,7 +1478,9 @@ a { color: inherit; text-decoration: none; transition: color var(--t); }
 
   .header-actions { gap: 8px; }
   .nav-phone { display: none; }
-  .nav-cta { padding: 9px 14px; font-size: 0.7rem; letter-spacing: 0.4px; }
+  .nav-cta, .menu-btn, #menu-btn { height: 40px; }
+  .nav-cta { padding: 0 16px; font-size: 0.7rem; letter-spacing: 0.4px; }
+  .menu-btn, #menu-btn { width: 40px; font-size: 1.15rem; }
 
   .hero { min-height: 560px; padding: 130px 0 40px; }
   .btn, .btn-ghost { padding: 14px 30px; font-size: 0.78rem; }
@@ -1533,11 +1541,14 @@ a { color: inherit; text-decoration: none; transition: color var(--t); }
    RESPONSIVE — SMALL MOBILE (480px)
    ═══════════════════════════ */
 @media (max-width: 480px) {
+  .section-title h2::before { width: 76px; height: 76px; }
   .hero { min-height: 460px; padding-top: 120px; }
   .logo-text { font-size: 0.78rem; letter-spacing: 0.2px; }
   .logo-img { width: 32px; height: 32px; }
   .header { height: 62px; padding: 0 3%; gap: 8px; }
-  .nav-cta { padding: 8px 12px; font-size: 0.64rem; letter-spacing: 0.3px; }
+  .nav-cta, .menu-btn, #menu-btn { height: 36px; }
+  .nav-cta { padding: 0 12px; font-size: 0.64rem; letter-spacing: 0.3px; }
+  .menu-btn, #menu-btn { width: 36px; font-size: 1.05rem; }
 
   .section-title h2 { font-size: 1.55rem; }
   .info-item img { height: 160px; }
@@ -1586,7 +1597,9 @@ a { color: inherit; text-decoration: none; transition: color var(--t); }
   .logo-text { font-size: 0.78rem; letter-spacing: 0.2px; }
   .logo-img { width: 30px; height: 30px; }
   .header { padding: 0 3%; }
-  .nav-cta { padding: 8px 12px; font-size: 0.66rem; letter-spacing: 0.4px; }
+  .nav-cta, .menu-btn, #menu-btn { height: 34px; }
+  .nav-cta { padding: 0 10px; font-size: 0.62rem; letter-spacing: 0.3px; }
+  .menu-btn, #menu-btn { width: 34px; font-size: 1rem; }
 
   .hero-content h1, .context h1 { font-size: 1.9rem; }
   .stats-grid { grid-template-columns: 1fr 1fr; gap: 18px 8px; }
